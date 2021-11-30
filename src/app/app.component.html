@@ -11,12 +11,12 @@
 
   <form *ngIf='!variable' (ngSubmit)="onSubmit()" #formcontrol="ngForm" style="padding-top: 10px;">
     <div class="form-group">
-      <label for="name">Recipe Name: </label>
+      <label for="name">recipe-name</label>
       <input type="text" class="form-control" placeholder="Name" [(ngModel)]="nameModel" name="name" id="name"
         #name="ngModel" required>
       <br>
       <br>
-      <label for="instructions">Recipe instructions: </label>
+      <label for="instructions">recipe-instructions</label>
       <input type="text" class="form-control" placeholder="Instructions" id="instructions" name="instructions" [(ngModel)]="instructions" required>
     </div>
     <br>
