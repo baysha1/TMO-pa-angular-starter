@@ -4,9 +4,9 @@
 <div class="content">
   <h3 *ngIf='variable'>There are no recipes to list</h3>
   <!-- <div>{{listOfNames | json}}</div> -->
-  <div *ngFor="let name of listOfNames">
+  <li *ngFor="let name of listOfNames">
     <b> {{name}} </b>           
-  </div>
+  </li>
   <button (click)='showContent()' *ngIf='variable' class="button1">Add Recipe</button>
 
   <form *ngIf='!variable' (ngSubmit)="onSubmit()" #formcontrol="ngForm" style="padding-top: 10px;">
